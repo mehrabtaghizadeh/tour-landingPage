@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سیر و سفر</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <!-- <link
+  rel="stylesheet"
+  href="./assets/css/animate.css"
+/> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header sepahbod" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">برای سوالات بیشتر:</p>
+
+            <p class="helpline-number">09112345678</p>
+          </div>
+
+        </a>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" alt="Tourly logo">
+        </a>
+
+        <div class="header-btn-group">
+
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo-blue.svg" alt="Tourly logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>خانه</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>درباره ما</a>
+            </li>
+
+            <li>
+              <a href="#destination" class="navbar-link" data-nav-link>مقصد</a>
+            </li>
+
+            <li>
+              <a href="#package" class="navbar-link" data-nav-link>بسته ها</a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="navbar-link" data-nav-link>گالری</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>ارتباط با ما</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <button class="btn btn-primary">رزرو کن</button>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <h2 class="h1 hero-title sepahbod">سفری برای کشف جهان</h2>
+
+          <p class="hero-text yekan">
+            سفر به دنیایی از زیبایی‌ها، با ما تبدیل به خاطراتی بی‌اندازید.
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-primary yekan">بیشتر بدانید</button>
+
+            <button class="btn btn-secondary yekan">رزرو کن</button>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TOUR SEARCH
+      -->
+
+      <section class="tour-search yekan">
+        <div class="container">
+
+          <form action="" class="tour-search-form">
+
+            <div class="input-wrapper">
+              <label for="destination" class="input-label">جستجوی مقصد*</label>
+
+              <input type="text" name="destination" id="destination" required placeholder="مقصد را وارد کنید"
+                class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="people" class="input-label">حداکثر تعداد*</label>
+
+              <input type="number" name="people" id="people" required placeholder="تعداد افراد" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="checkin" class="input-label">تاریخ ورود**</label>
+
+              <input type="date" name="checkin" id="checkin" required class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="checkout" class="input-label">چک کردن تاریخ*</label>
+
+              <input type="date" name="checkout" id="checkout" required class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">اکنون پرس و جو کنید</button>
+
+          </form>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #POPULAR
+      -->
+
+      <section class="popular">
+        <div class="container">
+
+          <p class="section-subtitle sepahbod">مکان را کشف کنید</p>
+
+          <h2 class="h2 section-title yekan">مقصد محبوب</h2>
+
+
+          <ul class="popular-list">
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/popular-1.jpg" alt="San miguel, italy" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle sepahbod">
+                    <a href="#">ایتالیا</a>
+                  </p>
+
+                  <h3 class="h3 card-title yekan">
+                    <a href="#">سان میگل</a>
+                  </h3>
+
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/popular-2.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle sepahbod">
+                    <a href="#">دوبی</a>
+                  </p>
+
+                  <h3 class="h3 card-title yekan">
+                    <a href="#">برج خلیفه</a>
+                  </h3>
+
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/popular-3.jpg" alt="Kyoto temple, japan" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle sepahbod">
+                    <a href="#">ژاپن</a>
+                  </p>
+
+                  <h3 class="h3 card-title yekan">
+                    <a href="#">معبد کیوتو</a>
+                  </h3>
+
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary yekan">مقصد بیشتر</button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PACKAGE
+      -->
+
+      <section class="package" id="package">
+        <div class="container">
+
+          <p class="section-subtitle sepahbod">تور های محبوب</p>
+
+          <h2 class="h2 section-title yekan">تور های ما را بررسی کنید</h2>
+
+
+
+          <ul class="package-list">
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/packege-1.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title sepahbod">تعطیلات بزرگ را در ساحل تجربه کنید</h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">7روز / 6شب</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">حداکثر: 10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text yekan">مالزی</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(25 نظر)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price yekan">
+                    $750
+                    <span>/ برای هر نفر</span>
+                  </p>
+
+                  <button class="btn btn-secondary yekan">رزرو کن</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/packege-2.jpg" alt="Summer Holiday To The Oxolotan River" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title sepahbod">تعطیلات تابستانی به رودخانه Oxolotan</h3>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">7روز / 6شب</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">حداکثر: 10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text yekan">مالزی</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(20 نظر)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    $520
+                    <span>/ برای هر نفر</span>
+                  </p>
+
+                  <button class="btn btn-secondary yekan">رزرو کن</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/packege-3.jpg" alt="Santorini Island's Weekend Vacation" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title sepahbod">تعطیلات آخر هفته جزیره سانتورینی</h3>
+
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">7روز / 6شب</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">حداکثر: 10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text yekan">مالزی</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(40 نظر)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    $660
+                    <span>/ برای هر نفر</span>
+                  </p>
+
+                  <button class="btn btn-secondary yekan">رزرو کن</button>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary yekan">مشاهده همه تورها</button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+
+          <p class="section-subtitle sepahbod">عکس های گالری</p>
+
+          <h2 class="h2 section-title yekan">عکس از مسافران</h2>
+
+          <ul class="gallery-list">
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" id="contact">
+        <div class="container">
+
+          <div class="cta-content">
+            <p class="section-subtitle sepahbod">فراخوانی برای اقدام</p>
+
+            <h2 class="h2 section-title yekan">آماده برای سفر فراموش نشدنی. ما را به خاطر بسپار</h2>
+
+          </div>
+
+          <button class="btn btn-secondary sepahbod">با ما تماس بگیرید !</button>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Tourly logo">
+          </a>
+
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title sepahbod">با ما تماس بگیرید </h4>
+
+          <p class="contact-text yekan">
+            در صورت تمایل با ما تماس بگیرید و با ما تماس بگیرید!!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+09112345678" class="contact-link yekan">09112345678</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.tourly.com" class="contact-link yekan">info.tourly.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address class="sepahbod">رشت , گیلان</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text yekan">
+            برای به روز رسانی و اخبار بیشتر در خبرنامه ما مشترک شوید!!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field yekan" placeholder="ایمیل خود را وارد کن ..." required>
+
+            <button type="submit" class="btn btn-secondary sepahbod">دنبال کردن</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="#" class="sepahbod">محراب تقی زاده</a>تمام حقوق محفوظ است
+        </p>
+
+        <ul class="footer-bottom-list yekan">
+
+          <li>
+            <a href="#" class="footer-bottom-link">سیاست حفظ حریم خصوصی</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">قوانین و شرایط</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">سوالات متداول</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+
+</html>
